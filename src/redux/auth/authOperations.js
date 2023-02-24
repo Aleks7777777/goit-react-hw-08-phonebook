@@ -2,6 +2,7 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import Notiflix from 'notiflix';
 
+
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
 const SIGN_UP_ENDPOINT = '/users/signup';
@@ -23,7 +24,10 @@ const logIn = createAsyncThunk('auth/login', async credentials => {
 	try {
 		const res = await axios.post(SIGN_IN_ENDPOINT, credentials);
 		token.set(res.data.token);
+
+
 		return res.data;
+
 	} catch (error) {
 		return Notiflix.Notify.failure(error.message);
 	}
@@ -34,6 +38,7 @@ const register = createAsyncThunk('auth/register', async credentials => {
 		const { data } = await axios.post(SIGN_UP_ENDPOINT, credentials);
 		token.set(data.token);
 		console.log(data);
+
 		return data;
 	} catch (error) {
 		return Notiflix.Notify.failure(error.message);
