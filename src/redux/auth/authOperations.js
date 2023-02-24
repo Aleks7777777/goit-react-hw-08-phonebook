@@ -18,16 +18,6 @@ const token = {
 	},
 };
 
-const register = createAsyncThunk('auth/register', async credentials => {
-	try {
-		const { data } = await axios.post(SIGN_UP_ENDPOINT, credentials);
-		token.set(data.token);
-		console.log(data);
-		return data;
-	} catch (error) {
-		return Notiflix.Notify.failure(error.message);
-	}
-});
 
 const logIn = createAsyncThunk('auth/login', async credentials => {
 	try {

@@ -6,7 +6,7 @@ const Loader = ({ color, size }) => {
 	return (
 		<div className={style.Background}>
 			<div className={style.Loader}>
-				<HollowDotsSpinner color={color} size={size} />
+				<HollowDotsSpinner colo r={color} size={size} />
 			</div>
 		</div>
 	);

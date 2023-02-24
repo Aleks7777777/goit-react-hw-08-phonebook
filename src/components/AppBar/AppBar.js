@@ -8,6 +8,13 @@ import styles from './Appbar.module.css';
 
 export default function AppBar() {
 	const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
-		</header >
+
+	return (
+		<header className={styles.header}>
+			<div className={styles.nav}>
+				<Navigation />
+				{isLoggedIn ? <UserMenu /> : <AuthForm />}
+			</div>
+		</header>
 	);
 }
