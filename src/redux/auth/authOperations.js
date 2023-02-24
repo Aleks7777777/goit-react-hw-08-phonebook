@@ -29,6 +29,17 @@ const logIn = createAsyncThunk('auth/login', async credentials => {
 	}
 });
 
+const register = createAsyncThunk('auth/register', async credentials => {
+	try {
+		const { data } = await axios.post(SIGN_UP_ENDPOINT, credentials);
+		token.set(data.token);
+		console.log(data);
+		return data;
+	} catch (error) {
+		return Notiflix.Notify.failure(error.message);
+	}
+});
+
 const logOut = createAsyncThunk('auth/logout', async () => {
 	try {
 		await axios.post(SIGN_OUT_ENDPOINT);

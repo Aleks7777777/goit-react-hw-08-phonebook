@@ -9,7 +9,6 @@ export default function ContactsView() {
 			<h1 className={styles.title}>PHONEBOOK</h1>
 			<h2>New contact</h2>
 			<ContactForm />
-
 			<h2>Contacts</h2>
 			<Filter />
 			<ContactList />
