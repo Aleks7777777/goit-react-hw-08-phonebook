@@ -19,7 +19,7 @@
 	align-items: center;
 	justify-content: center;
 	color: white;
-	background-color: #4caf50;
+	background-color: goldenrod;
 	width: 100px;
 	height: 32px;
 	margin-left: 10px;
@@ -34,5 +34,5 @@
 
 .button:hover,
 .button:focus {
-	background-color: #56ca5c;
+	background-color: gold;
 }

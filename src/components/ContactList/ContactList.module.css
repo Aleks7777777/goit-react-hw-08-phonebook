@@ -18,7 +18,7 @@
 	width: 100px;
 	height: 32px;
 	color: white;
-	background-color: #4caf50;
+	background-color: green;
 	font-size: 16px;
 	border: none;
 	border-radius: 4px;
@@ -27,5 +27,5 @@
 }
 
 .ContactList__button:hover {
-	background-color: #56ca5c;
+	background-color: red;
 }

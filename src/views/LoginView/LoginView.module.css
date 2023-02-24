@@ -1,11 +1,11 @@
 .section {
 	display: block;
-	min-width: 420px;
-	max-width: 500px;
+	min-width: 320px;
+	max-width: 400px;
 	margin: 0 auto;
 	margin-top: 20px;
 	padding: 20px;
-	background-color: #f2f2f2;
+	background-color: #6da9e8;
 	border-radius: 5px;
 }
 
@@ -35,7 +35,7 @@
 
 .input:hover,
 .input:focus {
-	background-color: #e4ffe6;
+	background-color: #e3e1de;
 }
 
 .button {
@@ -43,7 +43,7 @@
 	align-items: center;
 	justify-content: center;
 	color: white;
-	background-color: #4caf50;
+	background-color: goldenrod;
 	width: 100px;
 	height: 32px;
 	margin: 0 auto;
@@ -57,5 +57,5 @@
 
 .button:hover,
 .button:focus {
-	background-color: #56ca5c;
+	background-color: gold;
 }

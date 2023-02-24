@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from 'redux/auth';
-
 import styles from './RegistrationView.module.css';
 
 export default function RegistrationView() {

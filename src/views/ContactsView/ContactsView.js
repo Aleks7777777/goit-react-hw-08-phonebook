@@ -6,8 +6,8 @@ import styles from './ContactsView.module.css';
 export default function ContactsView() {
 	return (
 		<div className={styles.section}>
-			<h1 className={styles.title}>PHONEBOOK APP</h1>
-			<h2>Add new contact</h2>
+			<h1 className={styles.title}>PHONEBOOK</h1>
+			<h2>New contact</h2>
 			<ContactForm />
 
 			<h2>Contacts</h2>

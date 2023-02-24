@@ -11,9 +11,10 @@ export default function HomeView() {
 				<Navigate to="/contacts" />
 			) : (
 				<div className={styles.section}>
-					<h1 className={styles.title}>Phonebook app</h1>
+					<h1 className={styles.title}>Phonebook <br></br>app </h1>
 					<p className={styles.text}>
-						Please register or log in to start to work with the app.
+						In order to start working in the application, please <span className={styles.colortext}>
+							register or log in.</span>
 					</p>
 				</div>
 			)}
